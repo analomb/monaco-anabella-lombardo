@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#gradientebottomright{
+    background-image: linear-gradient(to bottom right,
+    rgb(201, 0, 0),
+    rgba(2, 2, 2, 0.884));
+}
+
+.ini {
+    margin: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: right;
+    color: blanchedalmond;
+
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond; 
+}
+a:hover{
+    font-weight: bold;
+}
+
+.nav {
+    width: 100%;
+    background-image: url(../imagenes/cars.jpg);
+    background-color:black ;
+    background-position: top;
+    position: sticky;
+    top: 0px;
+   height: 81px;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+
+
+}
+
+.navul {
+    list-style-type: disc;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+justify-content: center;
+    
+}
+main{
+    min-height: 80vh;
+}
+.main__index {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+grid-template-areas: "auto1 video auto3"
+"auto2 video auto4";
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+.auto1{
+    grid-area: auto1;
+}
+.auto2{
+    grid-area: auto2;
+}
+.video{
+    grid-area: video;
+}
+.auto3{
+    grid-area: auto3;
+}
+.auto4{
+    grid-area: auto4;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+.card{
+    width: 25%;
+    background-color: rgba(119, 114, 114, 0.87);
+   display: inline-block;
+    padding: 10px 10px 10px 10px;
+    transition: all 2s;
+    }
+    .card__img{
+    width: 85%;
+    margin: 5% 5% 5% 5%;
+}
+.video__tiktok{
+    width: 350px;
+    height: 600px;
+}
+.footer{
+    height: 81px;
+    color: blanchedalmond;
+    background-color: black;
+   /* background-image: url(../imagenes/cars.jpg); */ 
+}
+.footer h2{
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+.footer ul{
+   /* text-align: center;
+    list-style-type: disc;
+    line-height: 1.5;*/
+    display: flex;
+    list-style: none;
+    width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.footer ul li {
+    margin: 10px;
+}
+
+/*Autos*/
+.main__container {
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    justify-content: center;
+}
+.autos{
+   transition: all 2s;
+}
+.autos:hover{
+    transform: scale(1.1);
+}
+.autos iframe{
+    height: 330px;
+}
+/*Boutique*/
+.main__boutique{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+grid-template-areas: 
+"servicios videosb" 
+"ej ej ";
+
+
+}
+.servicios{
+    grid-area: servicios;
+    background-color: rgba(119, 114, 114, 0.8) ; 
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 65%;
+    padding: 10px 10px 10px 10px;
+    margin: 100px 100px 100px 100px;
+ 
+}
+.serv{
+    text-decoration: none;
+    list-style-type: none;
+}
+.videob{
+    grid-area: videob;
+    justify-content: center;
+    justify-items: center;
+    height: 55%;
+    margin: 100px 100px 100px 100px;
+    height: 65%;
+}
+.video__boutique{
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+    height: 550px;
+}
+.ej{
+    grid-area: ej;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    justify-content: center;
+   
+
+}
+/*Contactos*/
+.main__contacto{
+    background-image: url(../imagenes/cars1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+   display: inline-block;
+    height: 76vh;
+    width: 100%;
+    background-color: rgba(119, 114, 114, 0.8);
+}
+.main__contacto div{
+    background-color: rgba(119, 114, 114, 0.8);
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 500px;
+    top: 100px;
+}
+@media (max-width: 580px){
+    /*index*/
+    .main__index{
+        justify-content: center;
+        grid-template-columns:repeat(1fr);
+        grid-template-areas:"video"
+        "auto1"
+        "auto2"
+        "auto3"
+        "auto4"
+     }
+     .autos iframe{
+        height: 416px;
+        width: 80%;
+    }
+    .video__tiktok{
+        width: 80%;
+        height: 430px;
+    }
+    /*Autos*/
+    .main__container {
+        grid-template-columns:repeat(1,1fr);
+}
+}
