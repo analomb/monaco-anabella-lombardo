@@ -5,8 +5,7 @@
 }
 #gradientebottomright{
     background-image: linear-gradient(to bottom right,
-    rgb(201, 0, 0),
-    rgba(2, 2, 2, 0.884));
+    rgb(201, 0, 0),rgba(214, 58, 18, 0.932));
 }
 
 .ini {
@@ -15,14 +14,16 @@
     text-decoration: none;
     text-align: right;
     color: blanchedalmond;
+    color: rgb(201, 0, 0);
 
 }
 a{
     text-decoration: none;
-    color: blanchedalmond; 
+    color: rgb(201, 0, 0);
 }
-a:hover{
+a:hover , .ini:hover{
     font-weight: bold;
+    color:rgba(214, 58, 18, 0.932)
 }
 
 .nav {
@@ -75,8 +76,8 @@ grid-template-areas: "auto1 video auto3"
     grid-area: auto4;
 }
 
-.card:hover{
-    transform: scale(1.2);
+.card:hover {
+    transform: scale(1.1);
 }
 .card{
     width: 25%;
@@ -130,7 +131,7 @@ grid-template-areas: "auto1 video auto3"
    transition: all 2s;
 }
 .autos:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 .autos iframe{
     height: 330px;
