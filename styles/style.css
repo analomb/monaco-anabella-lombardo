@@ -17,11 +17,11 @@
     color: rgb(201, 0, 0);
 
 }
-a{
+a {
     text-decoration: none;
-    color: rgb(201, 0, 0);
+    color: rgb(201, 0, 0) !important;
 }
-a:hover , .ini:hover{
+a:hover, .ini:hover{ 
     font-weight: bold;
     color:rgba(214, 58, 18, 0.932)
 }
@@ -94,8 +94,8 @@ grid-template-areas: "auto1 video auto3"
     width: 350px;
     height: 600px;
 }
-.footer{
-    height: 81px;
+.footer {
+    height: 89px;
     color: blanchedalmond;
     background-color: black;
    /* background-image: url(../imagenes/cars.jpg); */ 
@@ -186,21 +186,21 @@ grid-template-areas:
 }
 /*Contactos*/
 .main__contacto{
-    background-image: url(../imagenes/cars1.jpg);
+    /*background-image: url(../imagenes/cars1.jpg);
     background-repeat: no-repeat;
     background-position: top;
-   display: inline-block;
-    height: 76vh;
+  display: inline-block;*/
+    height: 100%;
     width: 100%;
     background-color: rgba(119, 114, 114, 0.8);
 }
-.main__contacto div{
+.main__contactop{
     background-color: rgba(119, 114, 114, 0.8);
-    display: inline-block;
+     /* display: inline-block;
     text-align: center;
-    position: relative;
+  position: relative;
     left: 500px;
-    top: 100px;
+    top: 100px;*/
 }
 @media (max-width: 580px){
     /*index*/
