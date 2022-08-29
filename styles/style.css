@@ -168,10 +168,10 @@ main {
 /*Boutique*/
 .main__boutique {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr 1fr);
     grid-template-areas:
         "servicios videosb"
-        "ej ej ";
+        "servicios videosb";
 
 
 }
@@ -209,15 +209,7 @@ main {
     height: 550px;
 }
 
-.ej {
-    grid-area: ej;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    justify-content: center;
 
-
-}
 
 /*Contactos*/
 .main__contacto {
@@ -229,9 +221,27 @@ main {
 .main__contactop {
     background-color: rgba(119, 114, 114, 0.8);
 }
-
+/*Quienes somos*/
+.main__quienessomos{
+    height: 100%;
+}
+.quines{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img{
+    width: 40%;
+    height: 70%;
+}
 @media screen and (max-width: 680px) {
-
+    .nav {
+        height: 100px;
+    }
+    .footer{
+        100px
+    }
     /*index*/
     .main__index {
         justify-content: center;
@@ -259,4 +269,16 @@ main {
         grid-template-columns: repeat(1, 1fr);
        justify-content: center;
     }
+
+    /*Boutique*/
+    .main__boutique {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "servicios"
+            "videosb";
+    justify-content: center;
+    gap: 8px;
+    }
+    
 }
