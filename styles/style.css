@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0px;
@@ -55,12 +54,14 @@ a:hover,
 }
 
 .nav h2 {
-    color:white;
+    color: white;
 }
+
 .nav h2::first-letter {
-    color:rgba(206, 21, 21, 0.596);
+    color: rgba(206, 21, 21, 0.596);
     font-size: 42px
 }
+
 .navul {
     list-style-type: disc;
     line-height: 1.5;
@@ -118,7 +119,7 @@ main {
     height: 89px;
     color: blanchedalmond;
     background-color: rgba(0, 0, 0, 0.801);
-   
+
 }
 
 .footer h2 {
@@ -126,8 +127,9 @@ main {
     padding-top: 5px;
 
 }
+
 .footer h2::first-letter {
-    color:rgba(206, 21, 21, 0.596);
+    color: rgba(206, 21, 21, 0.596);
     font-size: 42px
 }
 
@@ -148,7 +150,7 @@ main {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:8px;
+    gap: 8px;
     justify-items: center;
     justify-content: center;
 }
@@ -221,27 +223,33 @@ main {
 .main__contactop {
     background-color: rgba(119, 114, 114, 0.8);
 }
+
 /*Quienes somos*/
-.main__quienessomos{
+.main__quienessomos {
     height: 100%;
 }
-.quines{
+
+.quines {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.img{
+
+.img {
     width: 40%;
     height: 70%;
 }
+
 @media screen and (max-width: 680px) {
     .nav {
         height: 100px;
     }
-    .footer{
-        100px
+
+    .footer {
+        height: 100px;
     }
+
     /*index*/
     .main__index {
         justify-content: center;
@@ -267,7 +275,7 @@ main {
     /*Autos*/
     .main__container {
         grid-template-columns: repeat(1, 1fr);
-       justify-content: center;
+        justify-content: center;
     }
 
     /*Boutique*/
@@ -277,8 +285,8 @@ main {
         grid-template-areas:
             "servicios"
             "videosb";
-    justify-content: center;
-    gap: 8px;
+        justify-content: center;
+        gap: 8px;
     }
-    
+
 }
