@@ -72,11 +72,9 @@ a:hover,
 
 }
 
-main {
-    min-height: 80vh;
-}
 
 .main__index {
+    min-height: 80vh;
     display: grid;
     grid-template-columns: repeat(1fr, 1fr, 1fr);
     grid-template-areas: "auto1 video auto3"

@@ -1,0 +1,118 @@
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.801);
+  background-position: top;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  height: 81px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h2 {
+  color: white;
+}
+nav h2::first-letter {
+  color: rgba(206, 21, 21, 0.596);
+  font-size: 42px;
+}
+nav h2 ul {
+  list-style-type: disc;
+  line-height: 1.5;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav h2 ul a {
+  text-decoration: none;
+  color: rgb(201, 0, 0) !important;
+}
+nav h2 ul li {
+  margin: 15px;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: right;
+  color: blanchedalmond;
+  color: rgb(201, 0, 0);
+}
+nav h2 ul li:hover {
+  font-weight: bold;
+  color: rgba(214, 58, 18, 0.932);
+}
+
+main {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr, 1fr);
+  grid-template-areas: "auto1 video auto3" "auto2 video auto4";
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+main .auto1 {
+  grid-area: auto1;
+}
+main .auto2 {
+  grid-area: auto2;
+}
+main .video {
+  grid-area: video;
+}
+main .auto3 {
+  grid-area: auto3;
+}
+main .auto4 {
+  grid-area: auto4;
+}
+main .video__tiktok {
+  width: 350px;
+  height: 600px;
+}
+
+footer {
+  height: 89px;
+  color: blanchedalmond;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+footer h2 {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+footer h2::first-letter {
+  color: rgba(206, 21, 21, 0.596);
+  font-size: 42px;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  width: 450px;
+  margin: 0 auto;
+  justify-content: center;
+}
+footer ul li {
+  margin: 10px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: capitalize;
+}
+
+::-moz-selection {
+  background-color: rgba(214, 57, 18, 0.596);
+}
+
+::selection {
+  background-color: rgba(214, 57, 18, 0.596);
+}
+
+#gradientebottomright {
+  background-image: linear-gradient(to bottom right, rgba(201, 0, 0, 0.774), rgba(214, 57, 18, 0.596));
+}/*# sourceMappingURL=estilos.css.map */

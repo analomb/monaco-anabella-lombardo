@@ -1,0 +1,100 @@
+nav{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    background-position: top;
+    position: sticky;
+    top: 0px;
+    height: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        color: white;
+        &::first-letter {
+            color: rgba(206, 21, 21, 0.596);
+    font-size: 42px
+        }
+        ul {
+            list-style-type: disc;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        color: rgb(201, 0, 0) !important;
+    }
+    li {
+        margin: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: right;
+    color: blanchedalmond;
+    color: rgb(201, 0, 0);
+
+    &:hover {
+        font-weight: bold;
+        color: rgba(214, 58, 18, 0.932)
+    }
+    }
+        }
+    }
+
+}
+main {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    grid-template-areas: "auto1 video auto3"
+        "auto2 video auto4";
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    .auto1 {
+        grid-area: auto1;
+    }
+    
+    .auto2 {
+        grid-area: auto2;
+    }
+    
+    .video {
+        grid-area: video;
+    }
+    
+    .auto3 {
+        grid-area: auto3;
+    }
+    
+    .auto4 {
+        grid-area: auto4;
+    }
+    .video__tiktok {
+        width: 350px;
+        height: 600px;
+    }
+}
+footer {
+    height: 89px;
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.801);
+    h2 {
+        padding-left: 10px;
+        padding-top: 5px;
+    &::first-letter {
+        color: rgba(206, 21, 21, 0.596);
+        font-size: 42px}
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        width: 450px;
+        margin: 0 auto;
+        justify-content: center;
+        li {
+            margin: 10px;
+        }
+        
+    }
+}
