@@ -241,11 +241,11 @@ a:hover,
 
 @media screen and (max-width: 680px) {
     .nav {
-        height: 100px;
+        height: auto;
     }
 
     .footer {
-        height: 100px;
+        height: auto;
     }
 
     /*index*/

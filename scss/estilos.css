@@ -1,3 +1,11 @@
+footer h2, nav .h2 {
+  color: white;
+}
+footer h2::first-letter, nav .h2::first-letter {
+  color: rgba(206, 21, 21, 0.596);
+  font-size: 42px;
+}
+
 nav {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.801);
@@ -11,14 +19,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav h2 {
-  color: white;
-}
-nav h2::first-letter {
-  color: rgba(206, 21, 21, 0.596);
-  font-size: 42px;
-}
-nav h2 ul {
+nav .navul {
   list-style-type: disc;
   line-height: 1.5;
   text-align: center;
@@ -26,21 +27,42 @@ nav h2 ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-nav h2 ul a {
-  text-decoration: none;
-  color: rgb(201, 0, 0) !important;
-}
-nav h2 ul li {
+nav .navul .ini {
   margin: 15px;
   list-style-type: none;
   text-decoration: none;
   text-align: right;
   color: blanchedalmond;
   color: rgb(201, 0, 0);
+  border-radius: 3px;
 }
-nav h2 ul li:hover {
+nav .navul a {
+  text-decoration: none;
+  color: rgb(201, 0, 0);
+}
+nav .navul a:hover {
   font-weight: bold;
   color: rgba(214, 58, 18, 0.932);
+}
+
+.inired {
+  background-color: red;
+}
+
+.inigrey {
+  background-color: grey;
+}
+
+.inired {
+  background-color: red;
+}
+
+.inigrey {
+  background-color: grey;
+}
+
+.inired {
+  background-color: red;
 }
 
 main {
@@ -76,23 +98,31 @@ footer {
   color: blanchedalmond;
   background-color: rgba(0, 0, 0, 0.801);
 }
-footer h2 {
-  padding-left: 10px;
-  padding-top: 5px;
-}
-footer h2::first-letter {
-  color: rgba(206, 21, 21, 0.596);
-  font-size: 42px;
-}
 footer ul {
   display: flex;
   list-style: none;
-  width: 450px;
-  margin: 0 auto;
   justify-content: center;
+  width: 450px;
+  height: 0 auto;
 }
-footer ul li {
+footer ul .f {
   margin: 10px;
+}
+footer ul a {
+  text-decoration: none;
+  color: rgb(201, 0, 0);
+}
+footer ul a:hover {
+  font-weight: bold;
+  color: rgba(214, 58, 18, 0.932);
+}
+
+.finstagram {
+  background-color: pink;
+}
+
+.ffacebook {
+  background-color: blue;
 }
 
 * {
@@ -115,4 +145,186 @@ body {
 
 #gradientebottomright {
   background-image: linear-gradient(to bottom right, rgba(201, 0, 0, 0.774), rgba(214, 57, 18, 0.596));
+}
+
+/*auto*/
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  justify-items: center;
+  justify-content: center;
+}
+.main__container .autos {
+  transition: all 2s;
+  -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.main__container .autos:hover {
+  transform: scale(1.03);
+}
+.main__container .autos iframe {
+  height: 330px;
+}
+
+.autos1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.autos2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.autos3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.autos4 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.autos5 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.autos6 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.autos7 {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.autos8 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.autos9 {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+/*Boutique*/
+.main__boutique {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr);
+  grid-template-areas: "servicios videosb" "servicios videosb";
+}
+.main__boutique .servicios {
+  grid-area: servicios;
+  background-color: rgba(119, 114, 114, 0.8);
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  height: 65%;
+  padding: 10px 10px 10px 10px;
+  margin: 100px 100px 100px 100px;
+}
+.main__boutique .servicios .serv {
+  text-decoration: none;
+  list-style-type: none;
+}
+.main__boutique .videob {
+  grid-area: videob;
+  justify-content: center;
+  justify-items: center;
+  height: 55%;
+  margin: 100px 100px 100px 100px;
+  height: 65%;
+}
+.main__boutique .videob .video__boutique {
+  justify-content: center;
+  justify-items: center;
+  width: 80%;
+  height: 550px;
+}
+
+/*Contactos*/
+.main__contacto {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(119, 114, 114, 0.8);
+}
+.main__contacto .main__contactop {
+  background-color: rgba(119, 114, 114, 0.8);
+}
+
+/*Quienes somos*/
+.main__quienessomos {
+  height: 100%;
+}
+.main__quienessomos .quines {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__quienessomos .img {
+  width: 40%;
+  height: 70%;
+}
+
+@-webkit-keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 680px) {
+  .nav {
+    height: auto;
+  }
+  .footer {
+    height: auto;
+  }
+  /*index*/
+  .main__index {
+    justify-content: center;
+    gap: 8px;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "video" "auto1" "auto2" "auto3" "auto4";
+  }
+  .autos iframe {
+    height: 416px;
+    width: 80%;
+  }
+  .video__tiktok {
+    width: 80%;
+    height: 430px;
+  }
+  /*Autos*/
+  .main__container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  /*Boutique*/
+  .main__boutique {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "servicios" "videosb";
+    justify-content: center;
+    gap: 8px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

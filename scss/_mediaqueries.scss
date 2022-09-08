@@ -1,0 +1,50 @@
+@media screen and (max-width: 680px) {
+    .nav {
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    /*index*/
+    .main__index {
+        justify-content: center;
+        gap: 8px;
+        grid-template-columns: repeat(1fr);
+        grid-template-areas: "video"
+            "auto1"
+            "auto2"
+            "auto3"
+            "auto4"
+    
+        }
+    .autos iframe {
+        height: 416px;
+        width: 80%;
+    }
+
+    .video__tiktok {
+        width: 80%;
+        height: 430px;
+    }
+
+
+    /*Autos*/
+    .main__container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    /*Boutique*/
+    .main__boutique {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "servicios"
+            "videosb";
+        justify-content: center;
+        gap: 8px;
+    }
+
+}
