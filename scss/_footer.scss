@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    height: auto;
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.801);
+
+    h2 {
+        @extend %monaco
+    }
+
+    ul {
+        
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 8%;
+        a {
+            text-decoration: none;
+            color: rgb(201, 0, 0) ;
+
+            &:hover {
+                font-weight: bold;
+                color: rgba(214, 58, 18, 0.932);
+            }
+        .f {
+            gap: 8%;
+
+        }
+        }
+    }
+    div {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 1% 1% 1% 1%;
+    }
+}
+$redes: (
+    instagram: pink,
+    facebook: blue
+);
+    
+
+    @each $redsocial, $colors in $redes {
+        .f#{$redsocial} {
+            background-color: $colors;
+        }
+    };

@@ -1,0 +1,55 @@
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    background-position: top;
+    position: sticky;
+    top: 0px;
+    height: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .h2 {
+       @extend %monaco
+    }
+
+    .navul {
+        list-style-type: disc;
+        line-height: 1.5;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .ini {
+            margin: 15px;
+            list-style-type: none;
+            text-decoration: none;
+            text-align: right;
+            color: blanchedalmond;
+            color: rgb(201, 0, 0);
+            border-radius: 3px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(201, 0, 0) ;
+
+            &:hover {
+                font-weight: bold;
+                color: rgba(214, 58, 18, 0.932);
+            }
+
+        }
+
+    }
+
+};
+@each $color in red, grey,red, grey,red,
+{
+    .ini#{$color} {
+        background-color: $color;
+    }
+}
