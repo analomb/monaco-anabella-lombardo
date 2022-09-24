@@ -72,7 +72,7 @@
     /*Contacto*/
     .main__contacto {
         flex-flow: wrap-reverse;
-        height: 160vh;
+        height: auto;
     }
 
     .main__contactop {
@@ -83,7 +83,7 @@
 
     /*Quienes somos*/
     .main__quienessomos {
-        height: 60vh;
+        height: 160vh;
     }
 
 }
@@ -108,6 +108,11 @@
     /*Contacto*/
     .main__contacto {
         height: 100%;
+    }
+    .main__contactop {
+        width: 95%;
+        margin: 6%;
+        padding: 6%;
     }
 
     /*Quienes somos*/
