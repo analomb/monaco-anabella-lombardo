@@ -172,7 +172,7 @@ footer h2::first-letter, nav .h::first-letter {
   justify-items: center;
   width: 100%;
   height: 550px;
-  margin: 4% 10% 10% 10%;
+  margin: 44% 10% 10% 10%;
 }
 
 /*Contactos*/
@@ -478,7 +478,7 @@ footer div {
   }
   /*Quienes somos*/
   .main__quienessomos {
-    height: 80vh;
+    height: 60vh;
   }
 }
 @media screen and (max-width: 950px) {
@@ -494,8 +494,12 @@ footer div {
   .videosb {
     margin: 1% 10% 4% 0%;
   }
+  /*Contacto*/
+  .main__contacto {
+    height: 100%;
+  }
   /*Quienes somos*/
   .main__quienessomos {
-    height: 100vh;
+    height: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
