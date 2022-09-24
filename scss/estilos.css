@@ -478,7 +478,7 @@ footer div {
   }
   /*Quienes somos*/
   .main__quienessomos {
-    height: auto;
+    height: 86vh;
   }
 }
 @media screen and (max-width: 950px) {
