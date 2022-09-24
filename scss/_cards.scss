@@ -1,17 +1,18 @@
-.cards__container{
+.cards__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     overflow: auto;
-    img{
+
+    img {
         width: 85%;
         margin: 5% 5% 5% 5%;
         border-radius: 8%;
-  }
+    }
 }
 
 
-.cards__item{
+.cards__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,5 +20,5 @@
     padding: 2%;
     margin: 10%;
     font-family: $titulo;
-    
+
 }

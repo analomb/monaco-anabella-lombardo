@@ -2,12 +2,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
     &::selection {
         background-color: rgba(214, 57, 18, 0.596);
     }
+
     &::-moz-selection {
         background-color: rgba(214, 57, 18, 0.596);
-      }
+    }
 }
 
 #gradientebottomright {

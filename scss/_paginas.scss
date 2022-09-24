@@ -4,10 +4,10 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+
     img {
-     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
 }
 
@@ -57,24 +57,24 @@
 
     h1 {
         text-align: center;
-        @extend %titulo ; 
-     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        @extend %titulo;
+        -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
 
     h2 {
         font-size: 25px;
     }
 
-   img {
-    width: 50%;
-    margin: 2% 2% 2% 2%;
-    transition: all 2s;
+    img {
+        width: 50%;
+        margin: 2% 2% 2% 2%;
+        transition: all 2s;
 
-    &:hover {
-        transform: scale(1.03);
+        &:hover {
+            transform: scale(1.03);
+        }
     }
-   }
 }
 
 .serv {
@@ -102,31 +102,31 @@
     width: 100%;
     height: 550px;
     margin: 44% 10% 10% 10%;
-   
+
 }
 
 /*Contactos*/
 .main__contacto {
-   width: 100%;
-   height: 160vh;
-   display: flex;
+    width: 100%;
+    height: 160vh;
+    display: flex;
     justify-content: center;
-   align-items: center;
+    align-items: center;
     gap: 16%;
     padding: 10%;
-   
+
 }
 
 .main__contactop {
     width: 50%;
-    height: max-content;
     background-color: rgb(211 130 135 / 75%);
     border-radius: 5%;
-   padding: auto;
-   text-align: center;
-   padding: 2%;
-  
+    padding: auto;
+    text-align: center;
+    padding: 2%;
+
 }
+
 .main__contactop2 {
     width: 100%;
     height: 100vh;
@@ -135,10 +135,12 @@
     gap: 8%;
     justify-content: space-evenly;
 }
+
 .cimg {
     width: 100%;
 }
-.maps{
+
+.maps {
     width: 100%;
     height: 100%;
 }
@@ -149,11 +151,11 @@
 
     h1 {
         text-align: center;
-        @extend %titulo ; 
+        @extend %titulo;
         font-family: $quines;
-     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            
+        -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
     }
 }
 
@@ -172,36 +174,40 @@
     font-family: $quines;
 }
 
- @-webkit-keyframes tracking-in-expand-fwd {
+@-webkit-keyframes tracking-in-expand-fwd {
     0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
     }
-  }
-  @keyframes tracking-in-expand-fwd {
+}
+
+@keyframes tracking-in-expand-fwd {
     0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
     }
-  }
-  
+}

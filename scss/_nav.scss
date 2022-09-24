@@ -1,92 +1,104 @@
 nav {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.801);
-    background-position: top;
-    position: sticky;
-    top: 0px;
-    height: 81px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.801);
+  background-position: top;
+  position: sticky;
+  top: 0px;
+  height: 81px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .h {
+    @extend %monaco;
+    font-weight: 800;
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+  }
+
+  .navul {
+    list-style-type: disc;
+    line-height: 1.5;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 
-    .h {
-       @extend %monaco;
-       font-weight: 800;
-       -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            
-    }
-
-    .navul {
-        list-style-type: disc;
-        line-height: 1.5;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .ini {
-            margin: 15px;
-            list-style-type: none;
-            text-decoration: none;
-            text-align: right;
-            color: blanchedalmond;
-            color: rgb(201, 0, 0);
-            border-radius: 3px;
-
-        }
-
-        a {
-            text-decoration: none;
-            color: rgb(201, 0, 0) ;
-
-            &:hover {
-                font-weight: bold;
-                color: rgba(214, 58, 18, 0.932);
-            }
-
-        }
+    .ini {
+      margin: 15px;
+      list-style-type: none;
+      text-decoration: none;
+      text-align: right;
+      color: blanchedalmond;
+      color: rgb(201, 0, 0);
+      border-radius: 3px;
 
     }
 
-};
-@each $color in red, grey,red, grey,red,
-{
-    .ini#{$color} {
-        background-color: $color;
+    a {
+      text-decoration: none;
+      color: rgb(201, 0, 0);
+
+      &:hover {
+        font-weight: bold;
+        color: rgba(214, 58, 18, 0.932);
+      }
+
     }
+
+  }
+
 }
+
+;
+
+@each $color in red,
+grey,
+red,
+grey,
+red,
+{
+.ini#{$color} {
+  background-color: $color;
+}
+}
+
 @-webkit-keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
   }
-  @keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
+
+  40% {
+    opacity: 0.6;
   }
-  
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}

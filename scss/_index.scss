@@ -1,53 +1,51 @@
-
 .main__index {
     display: grid;
     align-items: center;
     justify-content: center;
     gap: 4%;
     grid-template-columns: repeat(1fr, 1fr, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "puerta puerta puerta"
         "auto1 video auto3"
         "auto2 video auto4";
 }
+
 .puerta {
     grid-area: puerta;
-   }
-    
-    .auto1 {
-        grid-area: auto1;
-    }
+}
 
-    .auto2 {
-        grid-area: auto2;
-    }
+.auto1 {
+    grid-area: auto1;
+}
 
-    .video {
-        grid-area: video;
-       
-    }
-    .m {
-        padding: 2%;
-        margin: 10%;
-        text-align: center;
-       @extend %titulo ; 
-       font-family: $titulo;
-    
-    }
+.auto2 {
+    grid-area: auto2;
+}
 
-    .auto3 {
-        grid-area: auto3;
-    }
+.video {
+    grid-area: video;
 
-    .auto4 {
-        grid-area: auto4;
-    }
+}
 
-    .video__tiktok {
-        width: 350px;
-        height: 600px;
-     
-    }
+.m {
+    padding: 2%;
+    margin: 10%;
+    text-align: center;
+    @extend %titulo;
+    font-family: $titulo;
 
-    
-    
+}
+
+.auto3 {
+    grid-area: auto3;
+}
+
+.auto4 {
+    grid-area: auto4;
+}
+
+.video__tiktok {
+    width: 350px;
+    height: 600px;
+
+}
