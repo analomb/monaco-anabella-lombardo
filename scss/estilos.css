@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2? family=Combo&display=swap");
-footer h2, nav .h2, .main__quienessomos h1 {
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik+Marker+Hatch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+footer h2, nav .h {
   color: white;
 }
-footer h2::first-letter, nav .h2::first-letter, .main__quienessomos h1::first-letter {
+footer h2::first-letter, nav .h::first-letter {
   color: rgba(206, 21, 21, 0.596);
+  font-size: 42px !important;
+}
+
+.main__quienessomos h1, .servicios h1, .m {
+  color: black;
+}
+.main__quienessomos h1::first-letter, .servicios h1::first-letter, .m::first-letter {
+  color: rgba(128, 6, 6, 0.596);
   font-size: 42px;
 }
 
@@ -11,6 +21,7 @@ footer h2::first-letter, nav .h2::first-letter, .main__quienessomos h1::first-le
   display: grid;
   align-items: center;
   justify-content: center;
+  gap: 4%;
   grid-template-columns: repeat(1fr, 1fr, 1fr);
   grid-template-areas: "puerta puerta puerta" "auto1 video auto3" "auto2 video auto4";
 }
@@ -29,6 +40,13 @@ footer h2::first-letter, nav .h2::first-letter, .main__quienessomos h1::first-le
 
 .video {
   grid-area: video;
+}
+
+.m {
+  padding: 2%;
+  margin: 10%;
+  text-align: center;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .auto3 {
@@ -70,6 +88,10 @@ footer h2::first-letter, nav .h2::first-letter, .main__quienessomos h1::first-le
   justify-content: center;
   text-align: center;
 }
+.main__autos img {
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
 
 .main__container {
   display: grid;
@@ -91,65 +113,116 @@ footer h2::first-letter, nav .h2::first-letter, .main__quienessomos h1::first-le
 
 /*Boutique*/
 .main__boutique {
-  height: 130vh;
-  background-image: url(../imagenes/auto3.jpg);
+  height: auto;
+  width: 100%;
+  background-image: url(../imagenes/autoo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-  grid-template-columns: repeat(1fr 1fr);
-  grid-template-areas: "servicios videosb" "servicios videosb";
+  display: flex;
 }
 
 .servicios {
-  grid-area: servicios;
-  background-color: rgba(119, 114, 114, 0.8);
+  background-color: rgba(245, 235, 235, 0.973);
   justify-content: center;
   justify-items: center;
   text-align: center;
   height: 75%;
+  width: 50%;
   padding: 10px 10px 10px 10px;
   margin: 100px 100px 100px 100px;
+  border-radius: 4%;
+  font-family: "Indie Flower", cursive;
+}
+.servicios h1 {
+  text-align: center;
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+.servicios h2 {
+  font-size: 25px;
+}
+.servicios img {
+  width: 50%;
+  margin: 2% 2% 2% 2%;
+  transition: all 2s;
+}
+.servicios img:hover {
+  transform: scale(1.03);
 }
 
 .serv {
   text-decoration: none;
   list-style-type: none;
+  font-size: 22px;
+  transition: all 2s;
+}
+.serv:hover {
+  transform: scale(1.03);
 }
 
 .videob {
-  grid-area: videob;
   justify-content: center;
   justify-items: center;
-  height: 55%;
-  margin: 100px 100px 100px 100px;
-  height: 65%;
+  width: 100%;
 }
 
 .video__boutique {
   justify-content: center;
   justify-items: center;
-  width: 80%;
+  width: 100%;
   height: 550px;
+  margin: 44% 10% 10% 10%;
 }
 
 /*Contactos*/
 .main__contacto {
-  height: 100%;
   width: 100%;
-  background-color: rgba(119, 114, 114, 0.8);
+  height: 160vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16%;
+  padding: 10%;
 }
 
 .main__contactop {
-  background-color: rgba(119, 114, 114, 0.8);
+  width: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgba(211, 130, 135, 0.75);
+  border-radius: 5%;
+  padding: auto;
+  text-align: center;
+  padding: 2%;
+}
+
+.main__contactop2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  justify-content: space-evenly;
+}
+
+.cimg {
+  width: 100%;
+}
+
+.maps {
+  width: 100%;
+  height: 100%;
 }
 
 /*Quienes somos*/
 .main__quienessomos {
-  height: 100%;
+  height: 140vh;
 }
 .main__quienessomos h1 {
-  color: black;
+  text-align: center;
+  font-family: "Combo", cursive;
   -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
@@ -210,6 +283,11 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+nav .h {
+  font-weight: 800;
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
 nav .navul {
   list-style-type: disc;
   line-height: 1.5;
@@ -256,11 +334,42 @@ nav .navul a:hover {
   background-color: red;
 }
 
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 footer {
   width: 100%;
   height: auto;
   color: blanchedalmond;
   background-color: rgba(0, 0, 0, 0.801);
+}
+footer h2 {
+  font-weight: 800;
 }
 footer ul {
   display: flex;
@@ -286,24 +395,16 @@ footer div {
   padding: 1% 1% 1% 1%;
 }
 
-.finstagram {
-  background-color: pink;
-}
-
-.ffacebook {
-  background-color: blue;
-}
-
 .cards__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   overflow: auto;
 }
-
-.cards__item img {
+.cards__container img {
   width: 85%;
   margin: 5% 5% 5% 5%;
+  border-radius: 8%;
 }
 
 .cards__item {
@@ -311,6 +412,9 @@ footer div {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 2%;
+  margin: 10%;
+  font-family: "Rubik Dirt", cursive;
 }
 
 @media screen and (max-width: 680px) {
@@ -343,9 +447,9 @@ footer div {
   }
   .video__tiktok {
     width: 80%;
-    height: 430px;
     justify-content: center;
     align-items: center;
+    margin: 10% 10% 10% 10%;
   }
   /*Autos*/
   .main__container {
@@ -355,10 +459,39 @@ footer div {
   }
   /*Boutique*/
   .main__boutique {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "servicios" "videosb";
-    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
     gap: 8px;
+  }
+  .servicios {
+    width: 75%;
+  }
+  .videosb {
+    display: contents;
+  }
+  /*Contacto*/
+  .main__contacto {
+    flex-flow: wrap-reverse;
+    height: auto;
+  }
+  .main__contactop {
+    height: 80%;
+    width: 95%;
+    margin: 6%;
+    padding: 6%;
+  }
+}
+@media screen and (max-width: 950px) {
+  /*index*/
+  .video__tiktok {
+    height: 520px;
+  }
+  /*Auto*/
+  .main__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*Boutique*/
+  .videosb {
+    margin: 1% 10% 4% 0%;
   }
 }/*# sourceMappingURL=estilos.css.map */

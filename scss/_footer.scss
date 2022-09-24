@@ -5,7 +5,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.801);
 
     h2 {
-        @extend %monaco
+        @extend %monaco;
+        font-weight: 800;
     }
 
     ul {
@@ -35,14 +36,3 @@ footer {
         padding: 1% 1% 1% 1%;
     }
 }
-$redes: (
-    instagram: pink,
-    facebook: blue
-);
-    
-
-    @each $redsocial, $colors in $redes {
-        .f#{$redsocial} {
-            background-color: $colors;
-        }
-    };

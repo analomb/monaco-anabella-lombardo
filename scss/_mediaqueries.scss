@@ -39,9 +39,9 @@
     }
     .video__tiktok {
         width: 80%;
-        height: 430px;
         justify-content: center;
         align-items: center;
+        margin: 10% 10% 10% 10%;
     }
 
 
@@ -54,13 +54,42 @@
 
     /*Boutique*/
     .main__boutique {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-            "servicios"
-            "videosb";
-        justify-content: center;
+       flex-direction: column;
+       flex-flow: wrap;
         gap: 8px;
     }
-
+    .servicios {
+        width: 75%;
+    }
+    .videosb {
+        display: contents;
+    }
+    
+    /*Contacto*/
+    .main__contacto {
+        flex-flow: wrap-reverse;
+        height: auto;
+    }
+   .main__contactop {
+    height: 80%;
+    width: 95%;
+    margin: 6%;
+    padding: 6%;
+   }
+    
+}
+@media screen and (max-width: 950px) {
+    /*index*/
+    .video__tiktok {
+        height: 520px;
+    }
+    
+    /*Auto*/
+    .main__container {
+        grid-template-columns: repeat(2, 1fr);
+}
+    /*Boutique*/
+    .videosb {
+        margin: 1% 10% 4% 0%;
+    }
 }

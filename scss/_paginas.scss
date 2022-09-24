@@ -4,6 +4,11 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
+    img {
+     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
 }
 
 .main__container {
@@ -28,73 +33,125 @@
 
 /*Boutique*/
 .main__boutique {
-    height: 130vh;
-    background-image: url(../imagenes/auto3.jpg);
+    height: auto;
+    width: 100%;
+    background-image: url(../imagenes/autoo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(1fr 1fr);
-    grid-template-areas:
-        "servicios videosb"
-        "servicios videosb";
+    display: flex;
 
 }
 
 .servicios {
-    grid-area: servicios;
-    background-color: rgba(119, 114, 114, 0.8);
+    background-color: rgba(245, 235, 235, 0.973);
     justify-content: center;
     justify-items: center;
     text-align: center;
     height: 75%;
+    width: 50%;
     padding: 10px 10px 10px 10px;
     margin: 100px 100px 100px 100px;
-   
+    border-radius: 4%;
+    font-family: $boutique;
+
+    h1 {
+        text-align: center;
+        @extend %titulo ; 
+     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+   img {
+    width: 50%;
+    margin: 2% 2% 2% 2%;
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+   }
 }
 
 .serv {
     text-decoration: none;
     list-style-type: none;
+    font-size: 22px;
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
 }
 
 .videob {
-    grid-area: videob;
+
     justify-content: center;
     justify-items: center;
-    height: 55%;
-    margin: 100px 100px 100px 100px;
-    height: 65%;
+    width: 100%;
 
 }
 
 .video__boutique {
     justify-content: center;
     justify-items: center;
-    width: 80%;
+    width: 100%;
     height: 550px;
+    margin: 44% 10% 10% 10%;
+   
 }
 
 /*Contactos*/
 .main__contacto {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(119, 114, 114, 0.8);
-
+   width: 100%;
+   height: 160vh;
+   display: flex;
+    justify-content: center;
+   align-items: center;
+    gap: 16%;
+    padding: 10%;
+   
 }
 
 .main__contactop {
-    background-color: rgba(119, 114, 114, 0.8);
+    width: 50%;
+    height: max-content;
+    background-color: rgb(211 130 135 / 75%);
+    border-radius: 5%;
+   padding: auto;
+   text-align: center;
+   padding: 2%;
+  
+}
+.main__contactop2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    justify-content: space-evenly;
+}
+.cimg {
+    width: 100%;
+}
+.maps{
+    width: 100%;
+    height: 100%;
 }
 
 /*Quienes somos*/
 .main__quienessomos {
-    height: 100%;
+    height: 140vh;
 
     h1 {
-        @extend %monaco;
-        color: black;
-        -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        text-align: center;
+        @extend %titulo ; 
+        font-family: $quines;
+     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
             
     }

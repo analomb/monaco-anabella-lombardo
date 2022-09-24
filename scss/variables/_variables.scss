@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2? family=Combo&display=swap');
     $quines:'Combo', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik+Marker+Hatch&display=swap');
+    $titulo: 'Rubik Dirt', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    $boutique: 'Indie Flower', cursive;
 %monaco{
     color: white;
 
         &::first-letter {
             color: rgba(206, 21, 21, 0.596);
-            font-size: 42px
+            font-size: 42px !important;
         }
+    }
+%titulo{
+            color: black;
+        
+                &::first-letter {
+                    color: rgba(128, 6, 6, 0.596);
+                    font-size: 42px
+                }
 }

@@ -3,6 +3,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    gap: 4%;
     grid-template-columns: repeat(1fr, 1fr, 1fr);
     grid-template-areas: 
         "puerta puerta puerta"
@@ -23,6 +24,15 @@
 
     .video {
         grid-area: video;
+       
+    }
+    .m {
+        padding: 2%;
+        margin: 10%;
+        text-align: center;
+       @extend %titulo ; 
+       font-family: $titulo;
+    
     }
 
     .auto3 {
