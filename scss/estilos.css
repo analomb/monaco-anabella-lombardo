@@ -81,6 +81,10 @@ footer h2::first-letter, nav .h::first-letter {
   background-image: linear-gradient(to bottom right, rgba(201, 0, 0, 0.774), rgba(214, 57, 18, 0.596));
 }
 
+.monaco {
+  text-decoration: none;
+}
+
 /*auto*/
 .main__autos {
   display: flex;
@@ -215,7 +219,7 @@ footer h2::first-letter, nav .h::first-letter {
 
 /*Quienes somos*/
 .main__quienessomos {
-  height: 140vh;
+  height: 125vh;
 }
 .main__quienessomos h1 {
   text-align: center;
@@ -227,6 +231,7 @@ footer h2::first-letter, nav .h::first-letter {
 .quines {
   text-align: center;
   font-family: "Combo", cursive;
+  height: 80vh;
 }
 
 .img {
@@ -476,10 +481,6 @@ footer div {
     margin: 6%;
     padding: 6%;
   }
-  /*Quienes somos*/
-  .main__quienessomos {
-    height: 86vh;
-  }
 }
 @media screen and (max-width: 950px) {
   /*index*/
@@ -502,9 +503,5 @@ footer div {
     width: 95%;
     margin: 6%;
     padding: 6%;
-  }
-  /*Quienes somos*/
-  .main__quienessomos {
-    height: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
