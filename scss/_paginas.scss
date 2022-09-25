@@ -147,8 +147,7 @@
 
 /*Quienes somos*/
 .main__quienessomos {
-    height: 125vh;
-
+    
     h1 {
         text-align: center;
         @extend %titulo;
@@ -160,9 +159,10 @@
 }
 
 .quines {
+    height: 120vh;
     text-align: center;
     font-family: $quines;
-    height: 80vh;
+    
 }
 
 .img {
@@ -171,6 +171,7 @@
 }
 
 .qp {
+   
     padding: 4% 10% 4% 10%;
     font-family: $quines;
 }

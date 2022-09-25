@@ -218,9 +218,6 @@ footer h2::first-letter, nav .h::first-letter {
 }
 
 /*Quienes somos*/
-.main__quienessomos {
-  height: 125vh;
-}
 .main__quienessomos h1 {
   text-align: center;
   font-family: "Combo", cursive;
@@ -229,9 +226,9 @@ footer h2::first-letter, nav .h::first-letter {
 }
 
 .quines {
+  height: 120vh;
   text-align: center;
   font-family: "Combo", cursive;
-  height: 80vh;
 }
 
 .img {
@@ -481,6 +478,10 @@ footer div {
     margin: 6%;
     padding: 6%;
   }
+  /*Quienes somos*/
+  .main__quienessomos {
+    height: 86vh;
+  }
 }
 @media screen and (max-width: 950px) {
   /*index*/
@@ -503,5 +504,9 @@ footer div {
     width: 95%;
     margin: 6%;
     padding: 6%;
+  }
+  /*Quienes somos*/
+  .main__quienessomos {
+    height: 180vh;
   }
 }/*# sourceMappingURL=estilos.css.map */
