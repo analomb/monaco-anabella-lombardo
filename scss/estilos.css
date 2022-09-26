@@ -218,6 +218,9 @@ footer h2::first-letter, nav .h::first-letter {
 }
 
 /*Quienes somos*/
+.main__quienessomos {
+  width: 100%;
+}
 .main__quienessomos h1 {
   text-align: center;
   font-family: "Combo", cursive;
@@ -416,6 +419,33 @@ footer div {
   font-family: "Rubik Dirt", cursive;
 }
 
+@media screen and (max-width: 950px) {
+  /*index*/
+  .video__tiktok {
+    height: 520px;
+  }
+  /*Auto*/
+  .main__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*Boutique*/
+  .videosb {
+    margin: 1% 10% 4% 0%;
+  }
+  /*Contacto*/
+  .main__contacto {
+    height: 100%;
+  }
+  .main__contactop {
+    width: 95%;
+    margin: 6%;
+    padding: 6%;
+  }
+  /*Quienes somos*/
+  .main__quienessomos {
+    height: 180vh;
+  }
+}
 @media screen and (max-width: 680px) {
   .nav {
     height: auto;
@@ -481,32 +511,5 @@ footer div {
   /*Quienes somos*/
   .main__quienessomos {
     height: 86vh;
-  }
-}
-@media screen and (max-width: 950px) {
-  /*index*/
-  .video__tiktok {
-    height: 520px;
-  }
-  /*Auto*/
-  .main__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  /*Boutique*/
-  .videosb {
-    margin: 1% 10% 4% 0%;
-  }
-  /*Contacto*/
-  .main__contacto {
-    height: 100%;
-  }
-  .main__contactop {
-    width: 95%;
-    margin: 6%;
-    padding: 6%;
-  }
-  /*Quienes somos*/
-  .main__quienessomos {
-    height: 180vh;
   }
 }/*# sourceMappingURL=estilos.css.map */
